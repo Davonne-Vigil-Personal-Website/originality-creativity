@@ -1,5 +1,6 @@
 import React from "react";
 
-export default function Hobbies() {
+export default function Interest
+() {
   return <div></div>;
 }
