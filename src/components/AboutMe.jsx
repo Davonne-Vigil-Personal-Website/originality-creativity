@@ -22,16 +22,17 @@ export default function AboutMe() {
           <Image image={user.image} className="max-w-xs rounded-xl" />
         </div>
 
-        <div className="flex flex-col md:mt-20">
+        <div className="flex flex-col md:mt-12">
           <p>{user.gender}</p>
           <p>{user.age} years old</p>
           <br />
           <p>{user.city}</p>
           <p>{user.state}</p>
           <p>{user.country}</p>
-        </div>
+          <br />
 
-        <p>Last Login: {todaysDate}</p>
+          <p>Last Login: {todaysDate}</p>
+        </div>
       </div>
     </section>
   );
