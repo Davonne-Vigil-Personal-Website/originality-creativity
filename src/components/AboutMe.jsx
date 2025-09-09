@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "./Image";
+import ContactInfo from "./ContactInfo";
 
 export default function AboutMe() {
   const [user, setUser] = useState({
@@ -34,6 +35,7 @@ export default function AboutMe() {
           <p>Last Login: {todaysDate}</p>
         </div>
       </div>
+      <ContactInfo />
     </section>
   );
 }
