@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "./Image";
 import ContactInfo from "./ContactInfo";
+import DavonnesInterests from "./DavonnesInterests";
 
 export default function AboutMe() {
   const [user, setUser] = useState({
@@ -36,6 +37,7 @@ export default function AboutMe() {
         </div>
       </div>
       <ContactInfo />
+      <DavonnesInterests />
     </section>
   );
 }

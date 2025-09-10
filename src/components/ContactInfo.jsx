@@ -26,20 +26,23 @@ export default function ContactInfo() {
       way: "Hire User",
       link: "https://www.linkedin.com/in/davonnevigil/",
       emoji: "🤝",
-      id: 6,
+      id: 7,
     },
   ];
 
   return (
-    <section className="max-w-xl p-8 bg-white shadow-lg mt-8">
-      <p className="bg-blue-400 p-2 w-full font-mono mb-4">
+    <section className="max-w-lg bg-white shadow-lg mt-8">
+      <p className="bg-blue-400 w-full font-mono mb-4 p-2">
         Connecting to Davonne
       </p>
-      <ul className="grid grid-cols-2 gap-2">
+      <ul className="grid grid-cols-2 gap-2 p-4">
         {waysToContact.map((contactInfo) => (
           <li key={contactInfo.id} className="flex items-center gap-2">
             <span>{contactInfo.emoji}</span>
-            <a href={contactInfo.link} className="cursor-pointer">
+            <a
+              href={contactInfo.link}
+              className="cursor-pointer hover:text-blue-600"
+            >
               {contactInfo.way}
             </a>
           </li>

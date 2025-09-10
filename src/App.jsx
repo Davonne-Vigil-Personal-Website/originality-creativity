@@ -8,7 +8,7 @@ function App() {
     <main>
       <Header />
       <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-20">
           <AboutMe />
           <SecondColumn />
         </div>
