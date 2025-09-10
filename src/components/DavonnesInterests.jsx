@@ -37,14 +37,14 @@ export default function DavonnesInterests() {
   ];
 
   return (
-    <section className="max-w-lg bg-blue-100 shadow-lg mt-8 rounded-lg overflow-hidden">
+    <section className="max-w-lg bg-blue-100 shadow-lg mt-10 rounded-lg overflow-hidden">
       <p className="bg-blue-400 w-full font-mono mb-4 p-2">
         Davonne's Interests
       </p>
 
       {general.map((category, index) => (
         <section key={index} className="mb-4 p-2">
-          <div className="flex gap-4 items-stretch">
+          <div className="flex flex-col lg:flex-row gap-4 items-stretch">
             <p className="font-bold bg-blue-300 px-3 py-2 flex items-center justify-center rounded-lg min-w-[120px]">
               {category.title}
             </p>
