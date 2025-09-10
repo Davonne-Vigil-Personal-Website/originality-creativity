@@ -31,7 +31,7 @@ export default function ContactInfo() {
   ];
 
   return (
-    <section className="max-w-xl h-full p-8 bg-white shadow-lg mt-8">
+    <section className="max-w-xl p-8 bg-white shadow-lg mt-8">
       <p className="bg-blue-400 p-2 w-full font-mono mb-4">
         Connecting to Davonne
       </p>

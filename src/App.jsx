@@ -7,9 +7,11 @@ function App() {
   return (
     <main>
       <Header />
-      <div className="flex flex-col lg:flex-row justify-center items-center">
-        <AboutMe />
-        <SecondColumn />
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-10">
+          <AboutMe />
+          <SecondColumn />
+        </div>
       </div>
     </main>
   );
