@@ -7,12 +7,11 @@ function App() {
   return (
     <main>
       <Header />
-      <div className="max-w-7xl">
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col lg:flex-row gap-20">
-            <AboutMe />
-            <SecondColumn />
-          </div>
+
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col lg:flex-row gap-20">
+          <AboutMe />
+          <SecondColumn />
         </div>
       </div>
     </main>
