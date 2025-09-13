@@ -19,15 +19,15 @@ export default function Experience() {
     { project: "Our Space", link: "https://our-space-omega.vercel.app", id: 4 },
   ];
   return (
-    <section className="mt-8">
+    <section className="mt-8 px-4 sm:px lg:px-12">
       <h2 className="font-mono text-2xl font-bold">Davonne's Latest Work:</h2>
       <ul className="flex flex-col gap-8 mt-8">
         {myExperience.map((experience, id) => (
-          <li key={id} className="text-xl font-sans">
+          <li key={id} className="text-xl">
             {experience.project}
             <a
               href={experience.link}
-              className="hover:text-blue-500 font-bold font-mono"
+              className="hover:text-blue-500 text-sm font-semibold font-mono"
             >
               (view more)
             </a>
