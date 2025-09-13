@@ -20,10 +20,10 @@ export default function Experience() {
   ];
   return (
     <section className="mt-8">
-      <h2 className="font-mono text-lg font-bold">Davonne's Latest Work:</h2>
+      <h2 className="font-mono text-2xl font-bold">Davonne's Latest Work:</h2>
       <ul className="flex flex-col gap-8 mt-8">
         {myExperience.map((experience, id) => (
-          <li key={id}>
+          <li key={id} className="text-xl font-sans">
             {experience.project}
             <a
               href={experience.link}

@@ -37,7 +37,10 @@ export default function ContactInfo() {
       </p>
       <ul className="grid grid-cols-2 gap-2 p-4">
         {waysToContact.map((contactInfo) => (
-          <li key={contactInfo.id} className="flex items-center gap-2">
+          <li
+            key={contactInfo.id}
+            className="flex items-center gap-2 md:text-lg"
+          >
             <span>{contactInfo.emoji}</span>
             <a
               href={contactInfo.link}
