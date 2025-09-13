@@ -17,17 +17,14 @@ export default function AboutMe() {
   const todaysDate = new Date().toLocaleDateString();
 
   return (
-    <section className="p-8">
+    <section className="p-8 w-full">
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-3xl">{user.name}</h1>
-          <Image
-            image={user.image}
-            className="max-w-xs lg:max-w-sm rounded-xl"
-          />
+          <Image image={user.image} className="max-w-2xs rounded-xl" />
         </div>
 
-        <div className="flex flex-col md:mt-12">
+        <div className="flex flex-col max-w-lg md:mt-12">
           <p>{user.gender}</p>
           <p>{user.age} years old</p>
           <br />
