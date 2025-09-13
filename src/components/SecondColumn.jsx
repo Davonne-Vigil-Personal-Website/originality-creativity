@@ -1,4 +1,5 @@
 import Experience from "./Experience";
+import MyStory from "./MyStory";
 
 export default function SecondColumn() {
   return (
@@ -9,9 +10,7 @@ export default function SecondColumn() {
         </p>
       </div>
 
-      <div>
-        <Experience />
-      </div>
+      <Experience />
     </section>
   );
 }

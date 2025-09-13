@@ -21,7 +21,7 @@ export default function AboutMe() {
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-3xl">{user.name}</h1>
-          <Image image={user.image} className="max-w-2xs rounded-xl" />
+          <Image image={user.image} className="max-w-xs rounded-xl" />
         </div>
 
         <div className="flex flex-col max-w-lg md:mt-12">

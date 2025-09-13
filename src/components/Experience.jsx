@@ -1,3 +1,5 @@
+import MyStory from "./MyStory";
+
 export default function Experience() {
   const myExperience = [
     { project: "Davonne's Disney Inspired Portfolio", link: "", id: 0 },
@@ -36,6 +38,7 @@ export default function Experience() {
           </li>
         ))}
       </ul>
+      <MyStory />
     </section>
   );
 }

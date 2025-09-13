@@ -32,7 +32,7 @@ export default function ContactInfo() {
 
   return (
     <section className="max-w-lg bg-white shadow-lg mt-8">
-      <p className="bg-blue-400 w-full font-mono mb-4 p-2">
+      <p className="bg-blue-400 text-lg w-full font-mono mb-4 p-2">
         Connecting to Davonne
       </p>
       <ul className="grid grid-cols-2 gap-2 p-4">
