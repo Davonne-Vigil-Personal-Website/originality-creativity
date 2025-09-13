@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import SecondColumn from "./components/SecondColumn";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <SecondColumn className="flex-1" />
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
