@@ -26,7 +26,7 @@ const socialLinks = [
 export default function MyLinks() {
   return (
     <footer className="bg-blue-500">
-      <section className="flex flex-col justify-center items-center gap-4 py-8">
+      <section className="flex flex-col justify-center items-center gap-4 py-4">
         <div className="flex flex-row gap-4">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.href} className="flex items-center">

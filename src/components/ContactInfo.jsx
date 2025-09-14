@@ -35,11 +35,11 @@ export default function ContactInfo() {
       <p className="bg-blue-400 text-lg w-full font-mono mb-4 p-2">
         Connecting to Davonne
       </p>
-      <ul className="grid grid-cols-2 gap-2 p-4">
+      <ul className="grid grid-cols-2 gap-2">
         {waysToContact.map((contactInfo) => (
           <li
             key={contactInfo.id}
-            className="flex items-center gap-2 md:text-lg"
+            className="flex items-center gap-2 p-2 md:text-lg"
           >
             <span>{contactInfo.emoji}</span>
             <a
