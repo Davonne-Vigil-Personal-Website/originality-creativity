@@ -3,7 +3,7 @@ import Image from "./Image";
 const socialLinks = [
   {
     href: "https://www.linkedin.com/in/davonnevigiål/",
-    image: "images/linkedin.png",
+    image: "images/linkedin2.png",
     alt: "LinkedIn logo, by Icons8",
   },
   {
@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     href: "https://x.com/Davonne007",
-    image: "images/twitter2.png",
+    image: "images/twitter3.png",
     alt: "X logo, by Icons8",
   },
   {
@@ -40,7 +40,7 @@ export default function MyLinks() {
           ))}
         </div>
 
-        <p>© 2025 Davonne Vigil</p>
+        <p className="font-mono">© 2025 Davonne Vigil</p>
       </section>
     </footer>
   );
