@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     href: "https://x.com/Davonne007",
-    image: "images/twitter.png",
+    image: "images/twitter2.png",
     alt: "X logo, by Icons8",
   },
   {
