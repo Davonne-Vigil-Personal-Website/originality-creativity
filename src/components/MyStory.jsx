@@ -17,13 +17,13 @@ export default function MyStory() {
     },
   ];
   return (
-    <section className="w-full mt-8">
-      <h2 className="bg-blue-400 text-xl w-full font-mono mb-4 p-2">
+    <section className="w-full mt-8 bg-white shadow-md">
+      <h2 className="bg-blue-400 text-xl w-full font-mono mb-4 p-2 rounded-t-lg">
         From Sales to Coding
       </h2>
 
       {myStory.map((story) => (
-        <section key={story.id} className="p-2">
+        <section key={story.id} className="p-4">
           <div className="flex flex-col">
             <h3 className="text-2xl font-mono">{story.sectionName}</h3>
             <ul>
