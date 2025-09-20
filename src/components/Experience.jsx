@@ -1,4 +1,5 @@
 import MyStory from "./MyStory";
+import Youtube from "./Youtube";
 
 export default function Experience() {
   const myExperience = [
@@ -38,6 +39,7 @@ export default function Experience() {
           </li>
         ))}
       </ul>
+      <Youtube />
 
       <MyStory />
     </section>
