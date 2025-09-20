@@ -35,10 +35,14 @@ export default function ContactInfo() {
   ];
 
   const handleNavigation = (contactInfo) => {
-    if (contactInfo.path) {
+    // Only navigate when a non-empty path is provided
+    if (contactInfo.path && contactInfo.path.trim() !== "") {
       navigate(contactInfo.path);
     } else if (contactInfo.link) {
       window.open(contactInfo.link, "_blank");
+    } else {
+      // no-op for placeholder/internal items without a path yet
+      console.info(`No route configured for: ${contactInfo.way}`);
     }
   };
 

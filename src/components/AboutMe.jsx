@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInfo";
 import DavonnesInterests from "./DavonnesInterests";
 
 export default function AboutMe() {
-  const [user, setUser] = useState({
+  const [user] = useState({
     name: "Davonne Vigil",
     gender: "Female",
     age: 31,
