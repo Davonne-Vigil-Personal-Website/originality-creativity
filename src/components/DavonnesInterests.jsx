@@ -68,7 +68,7 @@ export default function DavonnesInterests() {
 
   return (
     <section className="max-w-lg bg-pink-100 shadow-lg mt-10 rounded-lg overflow-hidden">
-      <p className="bg-black text-white w-full font-mono mb-4 p-2 text-lg">
+      <p className="bg-[#28231D] text-white w-full font-mono mb-4 p-2 text-lg">
         Davonne's Interests
       </p>
 

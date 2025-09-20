@@ -18,7 +18,7 @@ export default function MyStory() {
   ];
   return (
     <section className="w-full mt-8 bg-white shadow-md">
-      <h2 className="bg-black text-white text-xl w-full font-mono mb-4 p-2 rounded-t-lg">
+      <h2 className="bg-#808402 text-white bg-[#28231D] text-xl w-full font-mono mb-4 p-2 rounded-t-lg">
         From Sales to Coding
       </h2>
 

@@ -25,7 +25,7 @@ const socialLinks = [
 
 export default function MyLinks() {
   return (
-    <footer className="bg-black-500">
+    <footer className="bg-#808402-500">
       <section className="flex flex-col justify-center items-center gap-4 py-4">
         <div className="flex flex-row gap-4">
           {socialLinks.map((link, index) => (
