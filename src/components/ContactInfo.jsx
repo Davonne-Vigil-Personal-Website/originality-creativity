@@ -1,37 +1,49 @@
+import { useNavigate } from "react-router-dom";
+
 export default function ContactInfo() {
+  const navigate = useNavigate();
+
   const waysToContact = [
-    { way: "Send Message", link: "", emoji: "💬", id: 0 }, //portfolio disney
+    { way: "Send Message", path: "", emoji: "💬", id: 0 }, // Internal route
     {
       way: "Add to Friends",
-      link: "https://www.linkedin.com/in/davonnevigil/",
+      link: "https://www.linkedin.com/in/davonnevigil/", // External URL
       emoji: "👥",
       id: 1,
     },
-    { way: "Instant Message", link: "", emoji: "💭", id: 2 },
-    { way: "Forward to a Friend", link: "", emoji: "↗️", id: 3 }, //resume
+    { way: "Instant Message", path: "", emoji: "💭", id: 2 }, // Internal route
+    { way: "Forward to a Friend", path: "/resume", emoji: "↗️", id: 3 }, // Internal route
     {
       way: "Add to favorites",
-      link: "https://x.com/davonne007",
+      link: "https://x.com/davonne007", // External URL
       emoji: "⭐",
       id: 4,
     },
-    { way: "Block User", link: "", emoji: "🚫", id: 5 }, //404 page
+    { way: "Block User", path: "/daisy404", emoji: "🚫", id: 5 }, // Internal route
     {
       way: "Refer User",
-      link: "https://www.linkedin.com/in/davonnevigil/",
+      link: "https://www.linkedin.com/in/davonnevigil/", // External URL
       emoji: "🤝",
       id: 6,
     },
     {
       way: "Hire User",
-      link: "https://www.linkedin.com/in/davonnevigil/",
+      link: "https://www.linkedin.com/in/davonnevigil/", // External URL
       emoji: "🤝",
       id: 7,
     },
   ];
 
+  const handleNavigation = (contactInfo) => {
+    if (contactInfo.path) {
+      navigate(contactInfo.path);
+    } else if (contactInfo.link) {
+      window.open(contactInfo.link, "_blank");
+    }
+  };
+
   return (
-    <section className="max-w-lg bg-white shadow-lg mt-8 border-#808402">
+    <section className="max-w-lg bg-white shadow-lg mt-8">
       <p className="bg-[#28231D] text-lg w-full font-mono mb-4 p-2 text-white">
         Connecting to Davonne
       </p>
@@ -42,12 +54,12 @@ export default function ContactInfo() {
             className="flex items-center gap-2 p-2 md:text-lg"
           >
             <span>{contactInfo.emoji}</span>
-            <a
-              href={contactInfo.link}
-              className="cursor-pointer hover:text-#808402-600"
+            <button
+              onClick={() => handleNavigation(contactInfo)}
+              className="cursor-pointer hover:text-pink-300"
             >
               {contactInfo.way}
-            </a>
+            </button>
           </li>
         ))}
       </ul>
