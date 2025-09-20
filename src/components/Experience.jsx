@@ -31,7 +31,7 @@ export default function Experience() {
             {experience.project}
             <a
               href={experience.link}
-              className="hover:text-blue-500 text-sm font-semibold font-mono"
+              className="hover:text-black-500 text-sm font-semibold font-mono"
             >
               (view more)
             </a>

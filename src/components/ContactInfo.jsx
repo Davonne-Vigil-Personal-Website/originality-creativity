@@ -31,8 +31,8 @@ export default function ContactInfo() {
   ];
 
   return (
-    <section className="max-w-lg bg-white shadow-lg mt-8">
-      <p className="bg-blue-400 text-lg w-full font-mono mb-4 p-2">
+    <section className="max-w-lg bg-white shadow-lg mt-8 border-black">
+      <p className="bg-black text-lg w-full font-mono mb-4 p-2 text-white">
         Connecting to Davonne
       </p>
       <ul className="grid grid-cols-2 gap-2">
@@ -44,7 +44,7 @@ export default function ContactInfo() {
             <span>{contactInfo.emoji}</span>
             <a
               href={contactInfo.link}
-              className="cursor-pointer hover:text-blue-600"
+              className="cursor-pointer hover:text-black-600"
             >
               {contactInfo.way}
             </a>
