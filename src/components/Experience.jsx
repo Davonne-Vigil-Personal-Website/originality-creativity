@@ -2,14 +2,14 @@ import MyStory from "./MyStory";
 
 export default function Experience() {
   const myExperience = [
-    { project: "Davonne's Disney Inspired Portfolio", link: "", id: 0 },
+    { project: " Disney Inspired Portfolio", link: "", id: 0 },
     {
       project: "2025 UI Projects",
       link: "https://dev-by-design.vercel.app/",
       id: 1,
     },
     {
-      project: "For His Purpose Notary Services",
+      project: "For His Purpose Notary",
       link: "https://www.forhispurposenotaryservice.com/",
       id: 2,
     },
