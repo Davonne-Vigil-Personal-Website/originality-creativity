@@ -21,7 +21,7 @@ export default function Experience() {
     { project: "Our Space", link: "https://our-space-omega.vercel.app", id: 4 },
   ];
   return (
-    <section className="mt-8 px-4 sm:px lg:px-12">
+    <section className="mt-8 px-4 sm:px lg:px-12 ">
       <h2 className="bg-[url('./images/hoop.jpg)] font-mono text-2xl font-bold">
         Davonne's Latest Work:
       </h2>
@@ -31,7 +31,7 @@ export default function Experience() {
             {experience.project}
             <a
               href={experience.link}
-              className="hover:text-#808402-500 text-sm font-semibold font-mono"
+              className="hover:text-pink-400 text-sm font-semibold font-mono"
             >
               (view more)
             </a>
