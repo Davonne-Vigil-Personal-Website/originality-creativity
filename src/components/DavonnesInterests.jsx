@@ -34,6 +34,7 @@ export default function DavonnesInterests() {
         "Framer",
         "Rive",
         "Design Tools",
+        "Adobe",
         "Next.js",
         "The Java Ecosystem",
         "AWS",

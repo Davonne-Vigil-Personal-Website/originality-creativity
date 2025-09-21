@@ -11,13 +11,13 @@ export default function Error() {
           <p className="text-2xl md:text-4xl font-medium text-gray-700">
             Oops! Page not found.
           </p>
-          <p className="mt-2 text-gray-500 text-xl md:text-2xl max-w-lg">
+          <p className="mt-2 text-gray-500 text-2xl md:text-3xl max-w-lg">
             It looks like the page you’re looking for doesn’t exist.
           </p>
 
           <Image
             image="/images/daisy2.png"
-            className="max-w-md mt-20 md:mt-48 "
+            className="max-w-sm md:max-w-md mt-20 md:mt-48 "
             alt="Daisy laying down being funny, background remover from Adobe"
           />
         </div>

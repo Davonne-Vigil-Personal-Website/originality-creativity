@@ -27,7 +27,8 @@ export default function ContactInfo() {
     },
     {
       way: "Hire User",
-      link: "https://www.linkedin.com/in/davonnevigil/", // External URL
+      path: "/hireMe",
+      // link: "https://www.linkedin.com/in/davonnevigil/", // External URL
       emoji: "🤝",
       id: 7,
     },
