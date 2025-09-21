@@ -4,25 +4,24 @@ export default function ContactInfo() {
   const navigate = useNavigate();
 
   const waysToContact = [
-    { way: "Send Message", path: "", emoji: "💬", id: 0 }, // Internal route
+    { way: "Send Message", path: "/contact", emoji: "💬", id: 0 },
     {
       way: "Add to Friends",
-      link: "https://www.linkedin.com/in/davonnevigil/", // External URL
+      link: "https://www.linkedin.com/in/davonnevigil/",
       emoji: "👥",
       id: 1,
     },
-    { way: "Instant Message", path: "", emoji: "💭", id: 2 }, // Internal route
-    { way: "Forward to a Friend", path: "/resume", emoji: "↗️", id: 3 }, // Internal route
+    { way: "Forward to a Friend", path: "/resume", emoji: "↗️", id: 3 },
     {
       way: "Add to favorites",
       link: "https://x.com/davonne007", // External URL
       emoji: "⭐",
       id: 4,
     },
-    { way: "Block User", path: "/daisy404", emoji: "🚫", id: 5 }, // Internal route
+    { way: "Block User", path: "/daisy404", emoji: "🚫", id: 5 },
     {
       way: "Refer User",
-      link: "https://www.linkedin.com/in/davonnevigil/", // External URL
+      link: "https://www.linkedin.com/in/davonnevigil/",
       emoji: "🤝",
       id: 6,
     },
@@ -35,13 +34,11 @@ export default function ContactInfo() {
   ];
 
   const handleNavigation = (contactInfo) => {
-    // Only navigate when a non-empty path is provided
     if (contactInfo.path && contactInfo.path.trim() !== "") {
       navigate(contactInfo.path);
     } else if (contactInfo.link) {
       window.open(contactInfo.link, "_blank");
     } else {
-      // no-op for placeholder/internal items without a path yet
       console.info(`No route configured for: ${contactInfo.way}`);
     }
   };
@@ -70,5 +67,3 @@ export default function ContactInfo() {
     </section>
   );
 }
-
-//idea do icon for social media on here

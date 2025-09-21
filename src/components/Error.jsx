@@ -4,7 +4,7 @@ export default function Error() {
   return (
     <section className="flex flex-col lg:flex-row bg-pink-50">
       <div className="flex-1 flex flex-col justify-center py-8 items-center text-center ">
-        <div className="lg:mb-96">
+        <div className="lg:mb-auto lg:mt-60">
           <h1 className="text-8xl md:text-9xl font-spicy text-pink-500 drop-shadow-sm">
             404
           </h1>
