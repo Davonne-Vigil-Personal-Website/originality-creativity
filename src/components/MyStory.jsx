@@ -7,7 +7,7 @@ export default function MyStory() {
     },
     {
       sectionName: "Skills",
-      details: `Leadership, Sales, Management, Community Building, Sales, Generating Monthly Revenue, Relationship Building, The Design Eye.`,
+      details: `Leadership, Sales, Management, Community Building, Sales, Problem Solving, Generating Monthly Revenue, Relationship Building, The Design Eye, Taking a design and turning it into reality.`,
       id: 1,
     },
     {

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "./Image";
 import ContactInfo from "./ContactInfo";
 import DavonnesInterests from "./DavonnesInterests";
+import Friends from "./Friends";
 
 export default function AboutMe() {
   const [user] = useState({
@@ -38,6 +39,7 @@ export default function AboutMe() {
       </div>
       <ContactInfo />
       <DavonnesInterests />
+      <Friends />
     </section>
   );
 }

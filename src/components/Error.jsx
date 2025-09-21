@@ -17,7 +17,7 @@ export default function Error() {
 
           <Image
             image="/images/daisy2.png"
-            className="max-w-sm md:max-w-md mt-20 md:mt-48 "
+            className="max-w-sm md:max-w-md mt-20 lg:mt-40  "
             alt="Daisy laying down being funny, background remover from Adobe"
           />
         </div>

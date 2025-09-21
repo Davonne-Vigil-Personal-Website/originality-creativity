@@ -8,7 +8,7 @@ export default function HireMe() {
           Thank You So Much
         </h2>
         <p className="text-xl md:text-3xl">Lets build something amazing..!</p>
-        <button className="p-2 mt-4 bg-gray-300 text-black font-mono cursor-pointer text-xl">
+        <button className="p-2 mt-4 hover:scale-105 transition-all duration-300 ease-in-out  bg-gray-300 text-black font-mono cursor-pointer text-xl">
           <a href="https://www.linkedin.com/in/davonnevigil/">
             Connect on LinkedIn
           </a>
