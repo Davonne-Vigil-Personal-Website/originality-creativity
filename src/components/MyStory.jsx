@@ -7,7 +7,7 @@ export default function MyStory() {
     },
     {
       sectionName: "Skills",
-      details: `blah blah blah blah`,
+      details: `Leadership, Sales, Management, Community Building, Sales, Generating Monthly Revenue, Relationship Building, The Design Eye.`,
       id: 1,
     },
     {
