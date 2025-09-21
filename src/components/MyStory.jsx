@@ -15,21 +15,23 @@ export default function MyStory() {
       details: [
         {
           school: "University of Texas at Arlington ",
-          year: "2014-2017",
+          // year: "2014-2017",
           degree: "General Studies",
-          info: "blah blah blah",
+          info: "Studying the subjects Geology, Philosophy, and History. ",
         },
         {
           school: "Tarrant County College",
-          year: "2018-2019",
+          // year: "2018-2019",
           degree: "Associate of Arts of Science, Library Technician",
-          info: "blah blah blah",
+          info: `Always loved books, learning and teaching others. This degree has given me the experience
+          I need when it comes to public speaking, and being able to know how to research. Utilizing the tools I have to find the answers I am looking for. `,
         },
         {
           school: "Fullstack Academy",
-          year: " 2023",
+          // year: " 2023",
           degree: "Certificate in Web Development",
-          info: "blah blah blah",
+          info: `At TCC found out about coding, and been coding ever since. Then got a new job and joined a coding bootcamp that taught me the skills I need 
+          to continue this path to land a role in tech.`,
         },
       ],
       id: 2,
