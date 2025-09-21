@@ -34,7 +34,7 @@ export default function Friends() {
       reader.onload = () => {
         setFormData({ ...formData, image: reader.result });
         setImageUpdated(true);
-        setTimeout(() => setImageUpdated(false), 2000);
+        setTimeout(() => setImageUpdated(false), 5000);
       };
       reader.readAsDataURL(imageFile);
     }
@@ -43,8 +43,12 @@ export default function Friends() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //limit 2 images
     if (friends.length >= 2) {
       alert("You can only add up to 2 friends, working on the logic!");
+      setFriends([]);
+      setFormData({ name: "", image: null });
+      localStorage.removeItem("friends");
       return;
     }
 
