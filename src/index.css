@@ -3,3 +3,7 @@
 @theme {
   --font-spicy: "Spicy Rice", serif;
 }
+
+:root {
+  --toastify-color-success: pink;
+}

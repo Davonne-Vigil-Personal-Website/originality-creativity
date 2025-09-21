@@ -14,6 +14,12 @@ export default function Error() {
           <p className="mt-2 text-gray-500 text-xl md:text-2xl max-w-lg">
             It looks like the page you’re looking for doesn’t exist.
           </p>
+
+          <Image
+            image="/images/daisy2.png"
+            className="max-w-md mt-20 md:mt-48 "
+            alt="Daisy laying down being funny, background remover from Adobe"
+          />
         </div>
       </div>
 
@@ -21,7 +27,7 @@ export default function Error() {
         <Image
           image="/images/daisy404.png"
           className="w-full h-full object-cover"
-          alt="daisy 404"
+          alt="daisy 404, background remover from Adobe"
         />
       </div>
     </section>

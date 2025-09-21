@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Suspense
         fallback={
-          <div className="min-h-screen mx-auto font-spicy text-7xl">
+          <div className="min-h-screen flex flex-col justify-center items-center font-spicy text-7xl">
             Loading Magic...
           </div>
         }
