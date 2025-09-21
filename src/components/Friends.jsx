@@ -128,7 +128,7 @@ export default function Friends() {
               setFriends([]);
               localStorage.removeItem("friends");
             }}
-            className="bg-pink-300 text-white py-2 px-4 rounded-lg font-medium hover:bg-red-600 transition-all duration-300"
+            className="bg-pink-300 text-white py-2 px-4 rounded-lg font-medium hover:bg-pink-500 transition-all duration-300"
           >
             Clear Friends
           </button>

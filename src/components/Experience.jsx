@@ -22,7 +22,7 @@ export default function Experience() {
     { project: "Our Space", link: "https://our-space-omega.vercel.app", id: 4 },
   ];
   return (
-    <section className="mt-8 px-4 sm:px lg:px-12 ">
+    <section className="mt-8 px-4 sm:px lg:px-12 w-full ">
       <h2 className="bg-[url('./images/hoop.jpg)] font-mono text-2xl font-bold">
         Davonne's Latest Work:
       </h2>
