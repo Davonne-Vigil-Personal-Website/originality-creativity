@@ -19,6 +19,7 @@ export const general = [
       "Design",
       "Figma",
       "Canva",
+      "Motion.dev",
       "ShadCN",
       "GSAP",
       "Material UI",

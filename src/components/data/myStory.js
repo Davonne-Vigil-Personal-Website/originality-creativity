@@ -6,7 +6,7 @@ export const myStory = [
   },
   {
     sectionName: "Skills",
-    details: `Leadership, Sales, Management, Community Building, Sales, Problem Solving, Generating Monthly Revenue, Relationship Building, The Design Eye, Taking a design and turning it into reality.`,
+    details: `Leadership, Sales, Management, Sales, Problem Solving, Generating Monthly Revenue, Relationship Building, Adaptability, The Design Eye, Taking a design and turning it into reality.`,
     id: 1,
   },
   {

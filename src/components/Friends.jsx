@@ -45,7 +45,9 @@ export default function Friends() {
 
     //limit 2 images
     if (friends.length >= 2) {
-      alert("You can only add up to 2 friends, working on the logic!");
+      alert(
+        "👀, can only 2 friends at this time. Thank you for being my friend..!"
+      );
       setFriends([]);
       setFormData({ name: "", image: null });
       localStorage.removeItem("friends");
@@ -68,7 +70,7 @@ export default function Friends() {
       <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
         <input
           type="text"
-          placeholder="Enter your friend's name"
+          placeholder="Enter your name"
           value={formData.name}
           onChange={handleNameChange}
           className="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
