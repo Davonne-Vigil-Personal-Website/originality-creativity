@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Friends() {
   const [friends, setFriends] = useState([]);
@@ -45,8 +47,18 @@ export default function Friends() {
 
     //limit 2 images
     if (friends.length >= 2) {
-      alert(
-        "👀, can only 2 friends at this time. Thank you for being my friend..!"
+      toast.info(
+        "👀 Can only have 2 friends at this time. Thank you for being my friend!",
+        {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        }
       );
       setFriends([]);
       setFormData({ name: "", image: null });
@@ -136,6 +148,7 @@ export default function Friends() {
           </button>
         </div>
       )}
+      <ToastContainer />
     </section>
   );
 }
