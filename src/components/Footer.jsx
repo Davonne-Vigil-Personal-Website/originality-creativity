@@ -26,7 +26,7 @@ const socialLinks = [
 export default function MyLinks() {
   return (
     <footer className="bg-#808402-500">
-      <section className="flex flex-col justify-center items-center gap-4 py-4">
+      <section className="flex flex-col justify-center items-center gap-4 py-4 font-mono">
         <div className="flex flex-row gap-4">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.href} className="flex items-center">
@@ -40,7 +40,8 @@ export default function MyLinks() {
           ))}
         </div>
 
-        <p className="font-mono">© 2025 Davonne Vigil</p>
+        <p>Inspired by the one and only Myspace</p>
+        <p>© 2025 Davonne Vigil</p>
       </section>
     </footer>
   );
