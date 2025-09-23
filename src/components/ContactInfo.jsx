@@ -32,6 +32,10 @@ export default function ContactInfo() {
       emoji: "🤝",
       id: 7,
     },
+    {
+      emoji: "🛹 🥡 🌮 🍔",
+      id: 8,
+    },
   ];
 
   const handleNavigation = (contactInfo) => {
