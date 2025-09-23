@@ -107,7 +107,7 @@ export default function Friends() {
     // limit number of friends
     if (friends.length >= MAX_FRIENDS) {
       toast.info(
-        `Thank you so much for being my friend..! 👀 Can only add up to ${MAX_FRIENDS} friends.`,
+        `Thank you so much for being my friend..! Can only add up to ${MAX_FRIENDS} friends at this time.`,
         {
           position: "top-center",
           autoClose: 4000,
