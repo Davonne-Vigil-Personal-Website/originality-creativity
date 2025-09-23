@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Friends() {
+  const MAX_FRIENDS = 6;
   const [friends, setFriends] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
@@ -20,9 +21,33 @@ export default function Friends() {
 
   // Save friends list whenever it changes
   useEffect(() => {
-    if (friends.length > 0) {
-      localStorage.setItem("friends", JSON.stringify(friends));
-    }
+    if (friends.length === 0) return;
+
+    // Try to save, and if quota is exceeded, remove oldest friend and retry up to 3 times
+    const trySave = (arr, attempts = 3) => {
+      try {
+        localStorage.setItem("friends", JSON.stringify(arr));
+        return true;
+      } catch (err) {
+        // QuotaExceededError handling
+        const isQuota =
+          err &&
+          (err.name === "QuotaExceededError" ||
+            err.code === 22 ||
+            err.code === 1014);
+        if (isQuota && arr.length > 0 && attempts > 0) {
+          // remove oldest entry and retry
+          const newArr = arr.slice(1);
+          setFriends(newArr);
+          return trySave(newArr, attempts - 1);
+        }
+        console.error("Failed to save friends to localStorage:", err);
+        toast.error("Could not save friend: storage full.");
+        return false;
+      }
+    };
+
+    trySave(friends, 3);
   }, [friends]);
 
   const handleNameChange = (e) => {
@@ -32,11 +57,45 @@ export default function Friends() {
   const handleImageChange = (e) => {
     const imageFile = e.target.files[0];
     if (imageFile) {
+      // Compress image using canvas to reduce storage size before saving as data URL
       const reader = new FileReader();
       reader.onload = () => {
-        setFormData({ ...formData, image: reader.result });
-        setImageUpdated(true);
-        setTimeout(() => setImageUpdated(false), 5000);
+        const img = new Image();
+        img.onload = () => {
+          const MAX_WIDTH = 900;
+          const MAX_HEIGHT = 900;
+          let width = img.width;
+          let height = img.height;
+
+          if (width > MAX_WIDTH) {
+            height = Math.round((height * MAX_WIDTH) / width);
+            width = MAX_WIDTH;
+          }
+          if (height > MAX_HEIGHT) {
+            width = Math.round((width * MAX_HEIGHT) / height);
+            height = MAX_HEIGHT;
+          }
+
+          const canvas = document.createElement("canvas");
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, width, height);
+
+          // quality 0.7 to reduce size; change to 0.8 if you want better quality
+          const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.7);
+          setFormData({ ...formData, image: compressedDataUrl });
+          setImageUpdated(true);
+          setTimeout(() => setImageUpdated(false), 5000);
+        };
+        img.onerror = (err) => {
+          console.error("Image load error:", err);
+          // fallback: use original data url
+          setFormData({ ...formData, image: reader.result });
+          setImageUpdated(true);
+          setTimeout(() => setImageUpdated(false), 5000);
+        };
+        img.src = reader.result;
       };
       reader.readAsDataURL(imageFile);
     }
@@ -45,13 +104,13 @@ export default function Friends() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    //limit 2 images
-    if (friends.length >= 2) {
+    // limit number of friends
+    if (friends.length >= MAX_FRIENDS) {
       toast.info(
-        "👀 Can only have 2 friends at this time. Thank you for being my friend!",
+        `Thank you so much for being my friend..! 👀 Can only add up to ${MAX_FRIENDS} friends.`,
         {
           position: "top-center",
-          autoClose: 5000,
+          autoClose: 4000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -60,9 +119,8 @@ export default function Friends() {
           theme: "dark",
         }
       );
-      setFriends([]);
+      // do not clear previous friends; just prevent adding more
       setFormData({ name: "", image: null });
-      localStorage.removeItem("friends");
       return;
     }
 
