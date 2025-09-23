@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <div className="bg-pink-500 w-full p-4 flex flex-col md:flex-row justify-between">
-        <Link to="/" className="font-mono text-xl ml-8">
+        <Link to="/" className="font-mono  ml-8 hover:text-pink-50">
           davonnesSite.vercel | Home 🐶
         </Link>
         <div className="font-mono hidden md:flex text-lg gap-4 ">

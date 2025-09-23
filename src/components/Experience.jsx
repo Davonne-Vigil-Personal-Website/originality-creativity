@@ -1,26 +1,8 @@
 import MyStory from "./MyStory";
 import Youtube from "./Youtube";
+import { myExperience } from "./data/myExperience";
 
 export default function Experience() {
-  const myExperience = [
-    { project: " Disney Inspired Portfolio", link: "", id: 0 },
-    {
-      project: "2025 UI Projects",
-      link: "https://dev-by-design.vercel.app/",
-      id: 1,
-    },
-    {
-      project: "For His Purpose Notary",
-      link: "https://www.forhispurposenotaryservice.com/",
-      id: 2,
-    },
-    {
-      project: "HabitQuest",
-      link: "https://habit-quest-collab.vercel.app/",
-      id: 3,
-    },
-    { project: "Our Space", link: "https://our-space-omega.vercel.app", id: 4 },
-  ];
   return (
     <section className="mt-8 px-4 sm:px lg:px-12 w-full ">
       <h2 className="bg-[url('./images/hoop.jpg)] font-mono text-2xl font-bold">
