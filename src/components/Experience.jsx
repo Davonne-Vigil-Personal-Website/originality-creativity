@@ -4,7 +4,7 @@ import { myExperience } from "./data/myExperience";
 
 export default function Experience() {
   return (
-    <section className="mt-8 px-4 sm:px lg:px-12 w-full ">
+    <section className="mt-8 px-4 sm:px-10 lg:px-12 w-full ">
       <h2 className="bg-[url('./images/hoop.jpg)] font-mono text-2xl font-bold">
         Davonne's Latest Work:
       </h2>

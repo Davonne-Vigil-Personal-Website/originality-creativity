@@ -1,12 +1,13 @@
 export const myStory = [
   {
     sectionName: "About Me",
-    details: `Vestibulum ultricies quis urna vitae consectetur. Donec dignissim vehicula metus non varius. Vestibulum ornare dictum erat a rhoncus. Sed lobortis suscipit leo vel imperdiet. Duis porta dui vitae mauris venenatis blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.`,
+    details: `"Sell me this pen." This was my favorite question to ask when I was giving interviews back when I was a Center Manager for a Waxing Salon. Something about the art of sales and crafting the perfect sales pitch. I went from dominating a sales pitch to crafting my own projects and learning how to code. `,
+    moreDetails: `I have 5+ years experience in the Beauty and Retail Industry and 5+ years experience coding building projects, owning my work. I am not going to stop. I cannot see myself not coding. I aim to combine my love for sales, my love for coding, and build something amazing with a company.`,
     id: 0,
   },
   {
     sectionName: "Skills",
-    details: `Leadership, Sales, Management, Sales, Problem Solving, Generating Monthly Revenue, Relationship Building, Adaptability, The Design Eye, Taking a design and turning it into reality.`,
+    details: `Leadership, Sales, Management, Problem Solving, Generating Monthly Revenue, Relationship Building, Adaptability, The Design Eye, Taking a design and turning it into reality.`,
     id: 1,
   },
   {
@@ -16,7 +17,7 @@ export const myStory = [
         school: "University of Texas at Arlington ",
         // year: "2014-2017",
         degree: "General Studies",
-        info: "Studying the subjects Geology, Philosophy, and History. ",
+        info: "Studying the subjects Earth Science, Philosophy, and History. ",
       },
       {
         school: "Tarrant County College",

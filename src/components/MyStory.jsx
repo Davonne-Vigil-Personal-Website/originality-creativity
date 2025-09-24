@@ -24,7 +24,10 @@ export default function MyStory() {
                 ))}
               </ul>
             ) : (
-              <p className="mt-2">{story.details}</p>
+              <>
+                <p className="mt-2">{story.details}</p>
+                <p className="mt-2">{story.moreDetails}</p>
+              </>
             )}
           </div>
         </section>

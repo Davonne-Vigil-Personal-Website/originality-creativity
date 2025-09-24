@@ -53,12 +53,9 @@ export default function ContactInfo() {
       <p className="bg-[#28231D] text-lg w-full font-mono mb-4 p-2 text-white">
         Connecting to Davonne
       </p>
-      <ul className="grid grid-cols-2 gap-2">
+      <ul className="grid grid-cols-2 md:gap-2">
         {waysToContact.map((contactInfo) => (
-          <li
-            key={contactInfo.id}
-            className="flex items-center gap-2 p-2 md:text-lg"
-          >
+          <li key={contactInfo.id} className="flex gap-2 p-2 md:text-lg">
             <span>{contactInfo.emoji}</span>
             <button
               onClick={() => handleNavigation(contactInfo)}
