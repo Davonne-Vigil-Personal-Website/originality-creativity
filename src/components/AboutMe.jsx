@@ -34,6 +34,12 @@ export default function AboutMe() {
           <p>{user.country}</p>
           <br />
 
+          <Image
+            image="./images/online.png"
+            className="w-20 rounded-full py-2"
+            alt="Online Now, image generated from ChatGPT"
+          />
+
           <p>Last Login: {todaysDate}</p>
         </div>
       </div>
