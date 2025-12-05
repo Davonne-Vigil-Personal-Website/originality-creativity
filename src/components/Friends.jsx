@@ -132,7 +132,7 @@ export default function Friends() {
 
   return (
     <section className="mt-10 bg-white shadow-lg px-6 py-6 rounded-2xl max-w-lg mx-auto">
-      <h2 className="text-2xl font-bold text-center bg-pink-300 text-white py-3 rounded-lg shadow">
+      <h2 className="text-2xl font-bold text-center bg-blue-500 text-white py-3 rounded-lg shadow">
         Friends
       </h2>
 
@@ -143,10 +143,10 @@ export default function Friends() {
           placeholder="Enter your name"
           value={formData.name}
           onChange={handleNameChange}
-          className="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          className="border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
-        <label className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-4 cursor-pointer hover:border-pink-400">
+        <label className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-4 cursor-pointer hover:border-blue-400">
           <span className="text-gray-500">Click to upload a photo</span>
           <input
             type="file"
@@ -164,7 +164,7 @@ export default function Friends() {
 
         <button
           type="submit"
-          className="bg-pink-400 text-white py-2 px-4 rounded-lg font-medium hover:bg-pink-500 transition"
+          className="bg-blue-400 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-500 transition"
         >
           Save Friend
         </button>
@@ -200,7 +200,7 @@ export default function Friends() {
               setFriends([]);
               localStorage.removeItem("friends");
             }}
-            className="bg-pink-300 text-white py-2 px-4 rounded-lg font-medium hover:bg-pink-500 transition-all duration-300"
+            className="bg-blue-300 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-500 transition-all duration-300"
           >
             Clear Friends
           </button>

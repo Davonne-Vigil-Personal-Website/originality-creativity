@@ -50,7 +50,7 @@ export default function ContactPage() {
   return (
     <form
       onSubmit={submitForm}
-      className="max-w-lg mx-auto mt-12 p-8 bg-white rounded-2xl shadow-lg shadow-pink-200 text-black"
+      className="max-w-lg mx-auto mt-12 p-8 bg-white rounded-2xl shadow-lg shadow-blue-200 text-black"
       aria-label="Contact Form"
     >
       <h3 className="text-center font-spicy text-3xl mb-6">
@@ -79,7 +79,7 @@ export default function ContactPage() {
             onChange={handleChange}
             placeholder="What's your name?"
             required
-            className="p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400 transition"
+            className="p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
           />
         </div>
 
@@ -95,7 +95,7 @@ export default function ContactPage() {
             onChange={handleChange}
             placeholder="E-mail?"
             required
-            className="p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400 transition"
+            className="p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
           />
         </div>
 
@@ -109,14 +109,14 @@ export default function ContactPage() {
             value={formData.message}
             onChange={handleChange}
             placeholder="Message Me"
-            className="p-3 h-32 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400 transition resize-none"
+            className="p-3 h-32 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition resize-none"
           />
         </div>
 
         <button
           type="submit"
           aria-label="Send message"
-          className="bg-pink-300 cursor-pointer text-white font-spicy text-lg py-3 rounded-full hover:scale-105 transform transition shadow-md"
+          className="bg-blue-300 cursor-pointer text-white font-spicy text-lg py-3 rounded-full hover:scale-105 transform transition shadow-md"
         >
           Send
         </button>

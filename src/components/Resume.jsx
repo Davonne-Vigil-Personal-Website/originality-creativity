@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-    <section className="flex flex-col justify-center bg-pink-100 items-center min-h-screen">
+    <section className="flex flex-col justify-center bg-blue-100 items-center min-h-screen">
       <h2 className="font-spicy text-4xl md:text-7xl">
         Resume In the making...
       </h2>

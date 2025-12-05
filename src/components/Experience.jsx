@@ -14,7 +14,7 @@ export default function Experience() {
             {experience.project}
             <a
               href={experience.link}
-              className="hover:text-pink-400 text-sm font-semibold font-mono"
+              className="hover:text-blue-400 text-sm font-semibold font-mono"
             >
               (view more)
             </a>

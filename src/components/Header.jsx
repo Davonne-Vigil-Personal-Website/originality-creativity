@@ -6,11 +6,11 @@ export default function Header() {
 
   return (
     <header>
-      <div className="bg-pink-500 w-full p-4 flex flex-col md:flex-row justify-between">
-        <Link to="/" className="font-mono  ml-8 hover:text-pink-50">
+      <div className="bg-blue-500 w-full p-4 flex flex-col md:flex-row justify-between">
+        <Link to="/" className="font-mono  ml-8 hover:text-blue-50">
           davonnesSite.vercel | Home 🐶
         </Link>
-        <div className="font-mono hidden md:flex text-lg gap-4 ">
+        {/* <div className="font-mono hidden md:flex text-lg gap-4 ">
           <label>
             <input
               type="radio"
@@ -33,9 +33,9 @@ export default function Header() {
             />{" "}
             Davonne's Space
           </label>
-        </div>
+        </div>*/}
       </div>
-      <div className="bg-pink-200 w-full p-4"></div>
+      <div className="bg-blue-500 w-full p-4"></div>
     </header>
   );
 }

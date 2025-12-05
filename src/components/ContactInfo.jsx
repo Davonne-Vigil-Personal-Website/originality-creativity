@@ -25,7 +25,7 @@ export default function ContactInfo() {
             <span>{contactInfo.emoji}</span>
             <button
               onClick={() => handleNavigation(contactInfo)}
-              className="cursor-pointer hover:text-pink-300"
+              className="cursor-pointer hover:text-blue-500"
             >
               {contactInfo.way}
             </button>
