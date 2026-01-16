@@ -3,7 +3,7 @@ import Image from "./Image";
 const socialLinks = [
   {
     href: "https://www.linkedin.com/in/davonnevigiål/",
-    image: "images/linkedin2.png",
+    image: "images/linkedIn.webp",
     alt: "LinkedIn logo, by Icons8",
   },
   {

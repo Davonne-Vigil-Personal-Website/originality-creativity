@@ -35,7 +35,7 @@ export default function AboutMe() {
           <br />
 
           <Image
-            image="./images/online.png"
+            image="./images/online.webp"
             className="w-20 rounded-full py-2"
             alt="Online Now, image generated from ChatGPT"
           />

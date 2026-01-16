@@ -28,7 +28,7 @@ export const waysToContact = [
     id: 7,
   },
   {
-    emoji: "🛹 🥡 🌮 🍔",
+    emoji: "🥡 🌮 🍔",
     id: 8,
   },
 ];
