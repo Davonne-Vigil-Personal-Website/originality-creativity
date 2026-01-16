@@ -6,9 +6,12 @@ export default function Header() {
 
   return (
     <header>
-      <div className="bg-blue-500 w-full p-4 flex flex-col md:flex-row justify-between">
-        <Link to="/" className="font-mono  ml-8 hover:text-blue-50">
-          davonnesSite.vercel | Home 🐶
+      <div className="bg-blue-500 w-full p-2 flex">
+        <Link
+          to="/"
+          className="font-spicy ml-8 hover:text-blue-50 flex items-center justify-center text-xl"
+        >
+          davonnesSite.vercel | 🐶
         </Link>
         {/* <div className="font-mono hidden md:flex text-lg gap-4 ">
           <label>

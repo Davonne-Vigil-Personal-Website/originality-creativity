@@ -2,16 +2,16 @@ import * as motion from "motion/react-client";
 
 export default function HireMe() {
   return (
-    <section className="bg-[url('/images/hire.jpg')] bg-cover min-h-screen relative">
+    <section className="bg-[url('/images/hire.webp')] bg-cover min-h-screen relative">
       <motion.div
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 4, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 2, ease: "easeOut" }}
-        className="text-white flex flex-col gap-4 shadow-lg p-4 bg-black/20 justify-center items-center"
+        className="text-white flex flex-col gap-4 shadow-lg p-8 bg-black/20 justify-center items-center"
       >
-        <div className="mt-20 flex flex-col gap-8 justify-center items-center ">
-          <h2 className="text-4xl md:text-7xl md:mt-20 md:mt-40 font-spicy">
+        <div className="mt-20 flex flex-col gap-8 justify-center items-center">
+          <h2 className="text-4xl md:text-7xl font-spicy mt-40">
             Thank You So Much
           </h2>
           <p className="text-2xl md:text-4xl text-center font-semibold">

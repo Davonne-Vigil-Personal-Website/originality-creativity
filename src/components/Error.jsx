@@ -16,7 +16,7 @@ export default function Error() {
           </p>
 
           <Image
-            image="/images/daisy2.png"
+            image="/images/daisy2.webp"
             className="max-w-sm md:max-w-md mt-20 lg:mt-40  "
             alt="Daisy laying down being funny, background remover from Adobe"
           />
@@ -25,7 +25,7 @@ export default function Error() {
 
       <div className="flex-1 w-full h-full">
         <Image
-          image="/images/daisy404.png"
+          image="/images/daisy404.webp"
           className="w-full h-full object-cover"
           alt="daisy 404, background remover from Adobe"
         />

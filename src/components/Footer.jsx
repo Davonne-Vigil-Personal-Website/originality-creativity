@@ -8,7 +8,7 @@ const socialLinks = [
   },
   {
     href: "https://github.com/Davonne007-TX",
-    image: "images/github.png",
+    image: "images/github.webp",
     alt: "Github logo, by Icons8",
   },
   {

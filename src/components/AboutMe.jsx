@@ -12,7 +12,7 @@ export default function AboutMe() {
     city: "DFW",
     state: "Texas",
     country: "United States",
-    image: "./images/davonne.png",
+    image: "./images/davonne.webp",
   });
 
   const todaysDate = new Date().toLocaleDateString();
