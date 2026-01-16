@@ -8,8 +8,8 @@ export default function AboutMe() {
   const [user] = useState({
     name: "Davonne Vigil",
     gender: "Female",
-    age: 31,
-    city: "Arlington",
+    age: 32,
+    city: "DFW",
     state: "Texas",
     country: "United States",
     image: "./images/davonne.png",

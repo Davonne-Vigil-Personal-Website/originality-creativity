@@ -2,7 +2,7 @@ export const myStory = [
   {
     sectionName: "About Me",
     details: `"Sell me this pen." This was my favorite question to ask when I was giving interviews back when I was a Center Manager for a Waxing Salon. Something about the art of sales and crafting the perfect sales pitch. I went from dominating a sales pitch to crafting my own projects and learning how to code. `,
-    moreDetails: `I have 5+ years experience in the Beauty and Retail Industry and 2+ years experience coding building projects, owning my work. I am not going to stop. I cannot see myself not coding. I aim to combine my love for sales, my love for coding, and build something amazing with a company.`,
+    moreDetails: `I have 5+ years experience in the Beauty and Retail Industry and 3+ years experience coding, learning, building projects, owning my work. I am not going to stop. I cannot see myself not coding. I cannot wait to build something amazing with a company and build something for the world.`,
     id: 0,
   },
   {
