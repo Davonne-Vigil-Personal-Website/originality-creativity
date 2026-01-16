@@ -8,7 +8,7 @@ export default function Header() {
           to="/"
           className="font-mono ml-8 hover:text-blue-50 flex items-center justify-center text-xl"
         >
-          davonnes-space.app | 💻
+          davonnes_space.app | 💻
         </Link>
       </div>
       <div className="bg-blue-500 w-full p-4"></div>
