@@ -11,8 +11,4 @@ Taking it back with a nostalgia Myspace Portfolio Project. Inspired by the UI, t
 
 # Deployed Project
 
-- https://davonnessite.vercel.app/
-
-```
-
-```
+- https://ds-space-theta.vercel.app/
