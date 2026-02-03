@@ -6,7 +6,7 @@ export const myExperience = [
   },
   {
     project: " Disney Inspired Portfolio",
-    link: "https://davonne-disney-inspired.vercel.app/",
+    link: "https://dv-disney.vercel.app/",
     id: 0,
   },
   {
